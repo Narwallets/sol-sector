@@ -25,16 +25,18 @@ export function Welcome() {
 
         <Spacer />
 
-        <Button
-          colorScheme="blue"
+        <Link
+          to="/dashboard"
+          as={RouterLink}
         >
-          <Link
-            to="/dashboard"
-            as={RouterLink}
-          >
-            Jugar
-          </Link>
-        </Button>
+          <Center>
+            <Button
+              colorScheme="blue"
+            >
+              Jugar
+            </Button>
+          </Center>
+        </Link>
       </Flex>
     </Container>
   );
