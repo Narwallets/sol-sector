@@ -1,12 +1,15 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import './index.css';
-import App from './App';
+import { ChakraProvider } from "@chakra-ui/react"
+
+import { Welcome } from './Welcome';
 import reportWebVitals from './reportWebVitals';
 
 ReactDOM.render(
   <React.StrictMode>
-    <App />
+    <ChakraProvider>
+      <Welcome />
+    </ChakraProvider>
   </React.StrictMode>,
   document.getElementById('root')
 );
