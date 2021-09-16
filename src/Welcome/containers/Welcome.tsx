@@ -1,6 +1,7 @@
 import React from 'react';
 import { Container, Navbar } from '../../shared/components';
 import { Flex, Link, Center, Button, Spacer, Box } from '@chakra-ui/react'
+import { Link as RouterLink } from "react-router-dom"
 
 export function Welcome() {
   return (
@@ -27,7 +28,12 @@ export function Welcome() {
         <Button
           colorScheme="blue"
         >
-          <Link to="#">Jugar</Link>
+          <Link
+            to="/dashboard"
+            as={RouterLink}
+          >
+            Jugar
+          </Link>
         </Button>
       </Flex>
     </Container>
