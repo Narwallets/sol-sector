@@ -1,6 +1,6 @@
 import React from 'react';
 import {
-  BrowserRouter as Router,
+  BrowserRouter,
   Switch,
   Route,
   Link
@@ -8,10 +8,11 @@ import {
 
 import { Welcome } from '../../Welcome';
 import { Dashboard } from '../../Dashboard';
+import { Marketplace } from '../../Marketplace';
 
-export function App() {
+export function Router() {
   return (
-    <Router>
+    <BrowserRouter>
       <Switch>
         <Route
           path="/"
@@ -25,7 +26,13 @@ export function App() {
         >
           <Dashboard />
         </Route>
+        <Route
+          path="/marketplace"
+          exact
+        >
+          <Marketplace />
+        </Route>
       </Switch>
-    </Router>
+    </BrowserRouter>
   );
 }
