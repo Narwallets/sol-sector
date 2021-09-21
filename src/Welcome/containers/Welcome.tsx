@@ -1,5 +1,5 @@
 import React from 'react';
-import { Container, Navbar } from '../../shared/components';
+import { Container, Navbar, Logo } from '../../shared/components';
 import { Flex, Link, Center, Button, Spacer, Box } from '@chakra-ui/react'
 import { Link as RouterLink } from "react-router-dom"
 
@@ -14,13 +14,11 @@ export function Welcome() {
         <Spacer />
 
         <Center
-          bg="#444"
           w="100%"
           h={300}
-          p={4}
           color="white"
         >
-          <h1>Logo</h1>
+          <Logo.Image />
         </Center>
 
         <Spacer />
