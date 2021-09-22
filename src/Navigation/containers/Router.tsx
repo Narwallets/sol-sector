@@ -51,7 +51,7 @@ export function Router() {
           path="/hangar"
           exact
         >
-          <Resources />
+          <Hangar />
         </Route>
 
         <Route
