@@ -5,6 +5,8 @@ import { ChakraProvider } from "@chakra-ui/react"
 import { Router } from './Navigation';
 import reportWebVitals from './reportWebVitals';
 
+import './index.css';
+
 ReactDOM.render(
   <React.StrictMode>
     <ChakraProvider>

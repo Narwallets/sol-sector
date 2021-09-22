@@ -1,6 +1,6 @@
 import React from 'react';
-import { Container, Navbar, Logo } from '../../shared/components';
-import { Flex, Link, Center, Button, Spacer, Box } from '@chakra-ui/react'
+import { Container, Navbar, Logo, Button } from '../../shared/components';
+import { Flex, Link, Center, Spacer, Box } from '@chakra-ui/react'
 import { Link as RouterLink } from "react-router-dom"
 
 export function Welcome() {
@@ -9,17 +9,17 @@ export function Welcome() {
       <Navbar />
       <Flex
         direction="column"
-        height={350}
+        paddingY={3}
+        height={600}
       >
         <Spacer />
 
-        <Center
+        <Box
           w="100%"
-          h={300}
-          color="white"
+          h={500}
         >
           <Logo.Image />
-        </Center>
+        </Box>
 
         <Spacer />
 
@@ -28,9 +28,7 @@ export function Welcome() {
           as={RouterLink}
         >
           <Center>
-            <Button
-              colorScheme="blue"
-            >
+            <Button preset="primary">
               Jugar
             </Button>
           </Center>

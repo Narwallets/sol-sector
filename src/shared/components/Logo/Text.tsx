@@ -15,7 +15,9 @@ export function Text() {
         height={30}
       >
       </img>
-      <span>Sol-sector</span>
+      <Box paddingLeft={2}>
+        <span className="text-xs text-bold">Sol-sector</span>
+      </Box>
     </Flex>
   );
 }
