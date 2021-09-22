@@ -6,10 +6,12 @@ export function Navbar() {
   return (
     <Flex
       paddingY={2}
+      borderBottomWidth={1}
+      borderBottomColor="#333"
     >
       <Logo.Text />
       <Spacer />
-      <Link color="teal.500" to="#">
+      <Link to="#">
         <Button preset="secondary">
           Mi cuenta
         </Button>

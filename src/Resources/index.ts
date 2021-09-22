@@ -1,1 +1,1 @@
-export {};
+export { Resources } from './containers/Resources'

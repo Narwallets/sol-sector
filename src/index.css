@@ -26,6 +26,9 @@ code {
 
 }
 .text-lg {
+	color: #fff;
+  font-size: 16px;
+  font-variant: small-caps;
 }
 
 .text-bold {
@@ -52,6 +55,11 @@ code {
 .button-primary:active {
 	position:relative;
 	top:1px;
+}
+
+.button-primary.active {
+	background: linear-gradient(to bottom, #0c49c4 100%, #135ad4 100%);
+	background-color:#0c49c4;
 }
 
 .button-secondary {
