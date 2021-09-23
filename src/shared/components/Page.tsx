@@ -27,6 +27,7 @@ export function Page(props: Props) {
           flex={1}
           minHeight={600}
           p={5}
+          flexDirection="column"
         >
           {props.children}
         </Flex>
