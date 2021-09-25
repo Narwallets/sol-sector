@@ -25,7 +25,8 @@ export function Page(props: Props) {
         <Sidebar page={props.id} />
         <Flex
           basis={1200}
-          p={2}
+          p={5}
+          flexDirection="column"
         >
           {props.children}
         </Flex>
