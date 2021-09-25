@@ -4,13 +4,13 @@ import { Container, Sidebar, Navbar } from '../../shared/components';
 
 type Props = {
   id:
-    | 'dashboard'
-    | 'resources'
-    | 'marketplace'
-    | 'hangar'
-    | 'galaxy'
-    | 'planet'
-    | 'alliances',
+  | 'dashboard'
+  | 'resources'
+  | 'marketplace'
+  | 'hangar'
+  | 'galaxy'
+  | 'planet'
+  | 'alliances',
   children: React.ReactNode,
 };
 
@@ -20,17 +20,16 @@ export function Page(props: Props) {
       <Navbar />
       <Flex
         direction="row"
-        width={500}
+        width={"100%"}
       >
         <Sidebar page={props.id} />
         <Flex
-          flex={1}
-          minHeight={600}
-          p={5}
+          basis={1200}
+          p={2}
         >
           {props.children}
         </Flex>
       </Flex>
-    </Container>
+    </Container >
   );
 }

@@ -6,8 +6,10 @@ export function Image() {
   return (
     <img
       src={logoBigImage}
-      style={{ width: '100%', height: '100%' }}
-    >  
-    </img>
+      style={{
+        width: "auto", height: "auto", objectFit: "cover"
+      }}
+    >
+    </img >
   );
 }

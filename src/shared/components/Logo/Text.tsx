@@ -1,7 +1,8 @@
 import React from 'react';
 import { Flex, Link, Center, Button, Spacer, Box } from '@chakra-ui/react'
+import { Link as RouterLink } from "react-router-dom"
 
-import logoIsoImage from '../../assets/logo_iso.jpg';
+import logo from '../../assets/logo_iso.png';
 
 export function Text() {
   return (
@@ -9,14 +10,19 @@ export function Text() {
       direction="row"
       alignItems="center"
     >
-      <img
-        src={logoIsoImage}
-        width={30}
-        height={30}
+      <Link
+        to="/"
+        as={RouterLink}
       >
-      </img>
+        <img
+          src={logo}
+          width={30}
+          height={30}
+        >
+        </img>
+      </Link>
       <Box paddingLeft={2}>
-        <span className="text-xs text-bold">Sol-sector</span>
+        <span className="text-xs text-bold">Sol Sector</span>
       </Box>
     </Flex>
   );

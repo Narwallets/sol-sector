@@ -10,29 +10,26 @@ export function Welcome() {
       <Flex
         direction="column"
         paddingY={3}
-        height={600}
       >
-        <Spacer />
-
         <Box
           w="100%"
-          h={500}
         >
           <Logo.Image />
         </Box>
-
-        <Spacer />
 
         <Link
           to="/dashboard"
           as={RouterLink}
         >
           <Center>
-            <Button preset="primary">
-              Jugar
+            <Button preset="primary" >
+              <Center>
+                Play
+              </Center>
             </Button>
           </Center>
         </Link>
+        <Spacer />
       </Flex>
     </Container>
   );

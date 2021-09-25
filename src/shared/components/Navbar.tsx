@@ -13,7 +13,7 @@ export function Navbar() {
       <Spacer />
       <Link to="#">
         <Button preset="secondary">
-          Mi cuenta
+          Account
         </Button>
       </Link>
     </Flex>
