@@ -19,27 +19,19 @@ export function Marketplace() {
           ['spacecraft', 'Spacecraft'],
         ]}
       >
-        <Tab.Item
-          id="elements"
-        >
+        <Tab.Item id="elements">
           <Elements />
         </Tab.Item>
 
-        <Tab.Item
-          id="buildings"
-        >
+        <Tab.Item id="buildings">
           <Buildings />
         </Tab.Item>
 
-        <Tab.Item
-          id="machinery"
-        >
+        <Tab.Item id="machinery">
           <Machinery />
         </Tab.Item>
 
-        <Tab.Item
-          id="spacecraft"
-        >
+        <Tab.Item id="spacecraft">
           <Spacecraft />
         </Tab.Item>
       </Tab.Group>

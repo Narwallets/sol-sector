@@ -1,11 +1,12 @@
 import React from 'react';
 import { Flex, Link, Center, Spacer, Box } from '@chakra-ui/react'
 import { Button } from './Button';
+import { Item } from './Item';
 
 type Props = {
   initialTab: string,
   tabs: [string, string][],
-  children: React.ReactElement<{ currentTab: string }>[],
+  children: React.ReactElement<React.ComponentProps<typeof Item>>[],
 };
 
 export function Group(props: Props) {
