@@ -21,7 +21,7 @@ export function Buildings() {
         </Tr>
       </Thead>
       <Tbody>
-        <Tr>
+        <Tr backgroundColor="#eae0c2">
           <Td>
             Test
           </Td>

@@ -140,8 +140,10 @@ code {
 th {
 	color           : whitesmoke !important;
 	background-color: teal;
+	border-color: #333 !important;
 }
 
 td {
-	color: whitesmoke;
+	color: #333 !important;
+	border-color: #333 !important;
 }
