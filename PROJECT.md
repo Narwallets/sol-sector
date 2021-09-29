@@ -12,7 +12,7 @@ Home
 
 Resources
   - 5 elementos que van a reprentar los 5 elementos princiaples
-    - Despues va a ver mas
+    - Despues va a haber mas
   - Estadisticas para saber cuanto vas minando
 
 Marketplace
@@ -44,7 +44,7 @@ Alliances
 
 # Histora
 
-De entrada no podes viajar, tenes que arregarltelas con lo que arrancas
+De entrada no podes viajar, tenes que arreglartelas con lo que arrancas
 luego vas ganando mas y podes comprarte una navecita y te vas haciendo
 la american way
 
