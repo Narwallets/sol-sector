@@ -1,5 +1,5 @@
 import React from 'react';
-import { Flex, Link, Center, Button, Spacer, Box } from '@chakra-ui/react'
+import { Flex, Link, Center, Button, Spacer, Box, Heading } from '@chakra-ui/react'
 import { Page } from '../../shared/components';
 import { Elements } from '../components/Elements';
 import { Buildings } from '../components/Buildings';
@@ -10,7 +10,12 @@ import { Tab } from '../../shared/components';
 export function Marketplace() {
   return (
     <Page id="marketplace">
-      <h1 className="text-lg">Planet: ?</h1>
+      <Heading
+        size="lg"
+        mb={5}
+      >
+        Planet Dark-Mercury
+      </Heading>
       <Tab.Group
         initialTab="elements"
         tabs={[

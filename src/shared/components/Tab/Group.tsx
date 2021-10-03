@@ -1,5 +1,5 @@
 import React from 'react';
-import { Flex, Link, Center, Spacer, Box } from '@chakra-ui/react'
+import { Flex, Link, Center, Spacer, Box, Text } from '@chakra-ui/react'
 import { Button } from './Button';
 import { Item } from './Item';
 
@@ -21,7 +21,7 @@ export function Group(props: Props) {
           onClick={() => setCurrentTab(id)}
           active={id === currentTab}
         >
-          {name}
+          <Text fontSize="xs">{name}</Text>
         </Button>
         )}
       </Flex>

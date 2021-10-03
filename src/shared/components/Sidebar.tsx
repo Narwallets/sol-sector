@@ -1,5 +1,5 @@
 import React from 'react';
-import { Flex, Link, Center, Spacer, Box } from '@chakra-ui/react'
+import { Flex, Link, Center, Spacer, Box, Text } from '@chakra-ui/react'
 import { Link as RouterLink } from "react-router-dom"
 import { Button } from './Button';
 
@@ -31,7 +31,7 @@ export function Sidebar(props: Props) {
           preset="primary"
           active={props.page === 'dashboard'}
         >
-          Dashboard
+          <Text fontSize="xs">Dashboard</Text>
         </Button>
       </Link>
 
@@ -43,7 +43,7 @@ export function Sidebar(props: Props) {
           preset="primary"
           active={props.page === 'resources'}
         >
-          Resources
+          <Text fontSize="xs">Resources</Text>
         </Button>
       </Link>
 
@@ -55,7 +55,7 @@ export function Sidebar(props: Props) {
           preset="primary"
           active={props.page === 'marketplace'}
         >
-          Marketplace
+          <Text fontSize="xs">Marketplace</Text>
         </Button>
       </Link>
 
@@ -67,7 +67,7 @@ export function Sidebar(props: Props) {
           preset="primary"
           active={props.page === 'hangar'}
         >
-          Hangar
+          <Text fontSize="xs">Hangar</Text>
         </Button>
       </Link>
 
@@ -79,7 +79,7 @@ export function Sidebar(props: Props) {
           preset="primary"
           active={props.page === 'galaxy'}
         >
-          Galaxy
+          <Text fontSize="xs">Galaxy</Text>
         </Button>
       </Link>
 
@@ -91,7 +91,7 @@ export function Sidebar(props: Props) {
           preset="primary"
           active={props.page === 'planet'}
         >
-          Planet
+          <Text fontSize="xs">Planet</Text>
         </Button>
       </Link>
 
@@ -103,7 +103,7 @@ export function Sidebar(props: Props) {
           preset="primary"
           active={props.page === 'alliances'}
         >
-          Alliances
+          <Text fontSize="xs">Alliances</Text>
         </Button>
       </Link>
     </Flex>

@@ -1,6 +1,8 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import { ChakraProvider } from "@chakra-ui/react"
+import { ColorModeScript } from "@chakra-ui/react"
+import theme from "./theme"
 
 import { Router } from './Navigation';
 import reportWebVitals from './reportWebVitals';
@@ -8,11 +10,14 @@ import reportWebVitals from './reportWebVitals';
 import './index.css';
 
 ReactDOM.render(
-  <React.StrictMode>
-    <ChakraProvider>
-      <Router />
-    </ChakraProvider>
-  </React.StrictMode>,
+  <>
+    <ColorModeScript initialColorMode={theme.config.initialColorMode} />
+    <React.StrictMode>
+      <ChakraProvider>
+        <Router />
+      </ChakraProvider>
+    </React.StrictMode>
+  </>,
   document.getElementById('root')
 );
 

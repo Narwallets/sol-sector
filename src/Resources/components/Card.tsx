@@ -1,5 +1,5 @@
 import React from 'react';
-import { Flex, Link, Center, Spacer, Box } from '@chakra-ui/react'
+import { Flex, Link, Center, Spacer, Box, Image, Heading, Text } from '@chakra-ui/react'
 
 export function Card() {
   const [quantity, setQuantity] = React.useState(100);
@@ -16,24 +16,23 @@ export function Card() {
 
   return (
     <Box
-      style={{
-        backgroundColor: '#333',
-        borderRadius: 5,
-        width: 150,
-        overflow: 'hidden',
-      }}
+      backgroundColor="gray.300"
+      rounded={5}
+      width={150}
+      overflow="hidden"
     >
-      <img
+      <Image
         src={require('../assets/h.jpg').default}
-        style={{ width: 150, height: 120 }}
+        width={150}
+        height={120}
       />
       <Box
-        backgroundColor="#555"
+        backgroundColor="gray.600"
         p={1}
       >
-        <h3 className="text-lg">Mina de hidrogeno</h3>
-        <p className="text-xs">{quantity} unidades</p>
-        <p className="text-xs">{productionPerFiveSeconds} cada 5 segundos</p>
+        <Heading size="sm">Mina de hidrogeno</Heading>
+        <Text fontSize="xs">{quantity} unidades</Text>
+        <Text fontSize="xs">{productionPerFiveSeconds} cada 5 segundos</Text>
       </Box>
     </Box>
   );

@@ -1,5 +1,5 @@
 import { Logo } from './Logo';
-import { Flex, Spacer, Link } from "@chakra-ui/react"
+import { Flex, Spacer, Link, Text } from "@chakra-ui/react"
 import { Button } from './Button';
 
 export function Navbar() {
@@ -16,14 +16,15 @@ export function Navbar() {
         alignItems="center"
         width={120}
         p={1}
+        direction="row"
       >
-        <span className="text-xs">Sol token</span>
+        <Text fontSize="xs">Sol token:</Text>
         <Spacer />
-        <span className="text-xs">1.000.000</span>
+        <Text fontSize="xs">1.000.000</Text>
       </Flex>
       <Link to="#">
         <Button preset="secondary">
-          Account
+          <Text fontSize="xs">Account</Text>
         </Button>
       </Link>
     </Flex>

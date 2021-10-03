@@ -1,5 +1,5 @@
 import React from 'react';
-import * as Chakra from "@chakra-ui/react"
+import { Tr, Td, Text, Image, Flex, Spacer } from "@chakra-ui/react"
 import { Button } from '../Button'
 
 type Props = {
@@ -13,46 +13,47 @@ type Props = {
 
 export function Row(props: Props) {
   return (
-    <Chakra.Tr>
-      <Chakra.Td>
-        <img
+    <Tr>
+      <Td>
+        <Image
           src={require(`../../assets/elements/${props.image}`).default}
-          style={{ width: 30, height: 30 }}
-        ></img>
-      </Chakra.Td>
-      <Chakra.Td className="text-sm">
-        {props.symbol}
-      </Chakra.Td>
-      <Chakra.Td className="text-sm">
-        {props.name}
-      </Chakra.Td>
-      <Chakra.Td className="text-sm" isNumeric>
-        {props.rarity}
-      </Chakra.Td>
-      <Chakra.Td className="text-sm" isNumeric>
-        {props.priceByMt}
-      </Chakra.Td>
-      <Chakra.Td className="text-sm" isNumeric>
-        {props.mtAvailable}
-      </Chakra.Td>
-      <Chakra.Td className="text-sm">
-        <Chakra.Flex
+          width={30}
+          height={30}
+        />
+      </Td>
+      <Td className="text-sm">
+      <Text fontSize="xs">{props.symbol}</Text>
+      </Td>
+      <Td className="text-sm">
+      <Text fontSize="xs">{props.name}</Text>
+      </Td>
+      <Td className="text-sm" isNumeric>
+      <Text fontSize="xs">{props.rarity}</Text>
+      </Td>
+      <Td className="text-sm" isNumeric>
+      <Text fontSize="xs">{props.priceByMt}</Text>
+      </Td>
+      <Td className="text-sm" isNumeric>
+        <Text fontSize="xs">{props.mtAvailable}</Text>
+      </Td>
+      <Td className="text-sm">
+        <Flex
           direction="row"
           width={100}
         >
           <Button
             preset="secondary"
           >
-            Buy
+            <Text fontSize="xs">Buy</Text>
           </Button>
-          <Chakra.Spacer />
+          <Spacer />
           <Button
             preset="secondary"
           >
-            Sell
+            <Text fontSize="xs">Sell</Text>
           </Button>
-        </Chakra.Flex>
-      </Chakra.Td>
-    </Chakra.Tr>
+        </Flex>
+      </Td>
+    </Tr>
   );
 }

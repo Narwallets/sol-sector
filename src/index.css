@@ -12,34 +12,6 @@ code {
 		monospace;
 }
 
-a, span, p, h1, h2, h3, h4, h5, h6 {
-	color       : #fff;
-}
-
-.text-xs {
-	color       : #fff;
-	font-size   : 12px;
-	font-variant: small-caps;
-}
-
-.text-sm {
-	color       : #fff;
-	font-size   : 14px;
-	font-variant: small-caps;
-}
-
-.text-md {}
-
-.text-lg {
-	color       : #fff;
-	font-size   : 16px;
-	font-variant: small-caps;
-}
-
-.text-bold {
-	font-weight: bold;
-}
-
 .button-primary {
 	box-shadow      : inset 0px 0px 15px 3px #23395e;
 	background      : linear-gradient(to bottom, #2e466e 5%, #415989 100%);
