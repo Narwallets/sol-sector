@@ -11,6 +11,16 @@ export function Navbar() {
     >
       <Logo.Text />
       <Spacer />
+      <Flex
+        justifyContent="center"
+        alignItems="center"
+        width={120}
+        p={1}
+      >
+        <span className="text-xs">Sol token</span>
+        <Spacer />
+        <span className="text-xs">1.000.000</span>
+      </Flex>
       <Link to="#">
         <Button preset="secondary">
           Account
