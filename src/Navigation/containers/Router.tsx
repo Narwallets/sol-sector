@@ -7,7 +7,7 @@ import {
 } from "react-router-dom";
 
 import { Welcome } from '../../Welcome';
-import { Dashboard } from '../../Dashboard';
+import { Home } from '../../Home';
 import { Marketplace } from '../../Marketplace';
 import { Resources } from '../../Resources';
 import { Hangar } from '../../Hangar';
@@ -27,17 +27,10 @@ export function Router() {
         </Route>
 
         <Route
-          path="/dashboard"
+          path="/home"
           exact
         >
-          <Dashboard />
-        </Route>
-
-        <Route
-          path="/resources"
-          exact
-        >
-          <Resources />
+          <Home />
         </Route>
 
         <Route
@@ -48,17 +41,19 @@ export function Router() {
         </Route>
 
         <Route
-          path="/hangar"
-          exact
-        >
-          <Hangar />
-        </Route>
-
-        <Route
           path="/galaxy"
           exact
         >
           <Galaxy />
+        </Route>
+
+        {/* Investigation */}
+
+        <Route
+          path="/alliances"
+          exact
+        >
+          <Alliances />
         </Route>
 
         <Route
@@ -69,11 +64,22 @@ export function Router() {
         </Route>
 
         <Route
-          path="/alliances"
+          path="/resources"
           exact
         >
-          <Alliances />
+          <Resources />
         </Route>
+
+        <Route
+          path="/hangar"
+          exact
+        >
+          <Hangar />
+        </Route>
+
+        {/* Production */}
+
+        {/* Facilities */}
       </Switch>
     </BrowserRouter>
   );

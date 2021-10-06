@@ -5,13 +5,16 @@ import { Footer } from './Footer';
 
 type Props = {
   id:
-  | 'dashboard'
-  | 'resources'
-  | 'marketplace'
-  | 'hangar'
-  | 'galaxy'
-  | 'planet'
-  | 'alliances',
+    | 'home'
+    | 'marketplace'
+    | 'galaxy'
+    | 'investigation'
+    | 'alliances'
+    | 'planet'
+    | 'resources'
+    | 'hangar'
+    | 'production'
+    | 'facilities'
   children: React.ReactNode,
 };
 
