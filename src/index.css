@@ -39,6 +39,13 @@ code {
 	top     : 1px;
 }
 
+.button-primary.active {
+	background-color:#c58300;
+	background:linear-gradient(to bottom, #c58300 5%, #c58300 100%);
+	color:#ffffff;
+	text-shadow:0px 1px 0px #861903;
+}
+
 .button-secondary {
 	box-shadow:inset 0px 1px 0px 0px #97c4fe;
 	background:linear-gradient(to bottom, #3d94f6 5%, #1e62d0 100%);
@@ -99,6 +106,7 @@ code {
 }
 .tab.active {
 	background:linear-gradient(to bottom, #ddd 100%, #ddd 100%);
+	background-color:#ddd;
 }
 
 th {
