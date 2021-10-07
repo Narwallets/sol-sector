@@ -12,40 +12,50 @@ export function Elements() {
 					"symbol": "H",
 					"name": "Hydrogen",
 					"rarity": "105",
-					"priceByMt": "1",
+					"weightByMt": "1",
+					"volumeByMt": "1",
 					"mtAvailable": "354",
+					"priceByMt": "1"
         },
         {
           "image": "au.jpg",
 					"symbol": "Li",
 					"name": "Lithium",
 					"rarity": "18",
-					"priceByMt": "32.54",
+					"weightByMt": "1",
+					"volumeByMt": "1",
 					"mtAvailable": "16",
+					"priceByMt": "1"
         },
         {
           "image": "ga.jpg",
 					"symbol": "Fe",
 					"name": "Iron",
 					"rarity": "60",
-					"priceByMt": "5.53",
+					"weightByMt": "1",
+					"volumeByMt": "1",
 					"mtAvailable": "84",
+					"priceByMt": "1"
         },
         {
           "image": "cu.jpg",
 					"symbol": "Co",
 					"name": "Cobalt",
 					"rarity": "31",
-					"priceByMt": "9.53",
+					"weightByMt": "1",
+					"volumeByMt": "1",
 					"mtAvailable": "3",
+					"priceByMt": "1"
         },
         {
           "image": "cd.jpg",
 					"symbol": "Cd",
 					"name": "Palladium",
 					"rarity": "0.014",
-					"priceByMt": "9251.26",
+					"weightByMt": "1",
+					"volumeByMt": "1",
 					"mtAvailable": "0.2",
+					"priceByMt": "1"
         },
       ]}
     />
