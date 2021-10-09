@@ -25,7 +25,7 @@ export function Group(props: Props) {
           >
             <Text fontSize="xs">{name}</Text>
           </Button>
-          <GapHorizontal />
+          <GapHorizontal preset="xs" />
         </>
         )}
       </Flex>

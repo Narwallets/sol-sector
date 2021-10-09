@@ -78,6 +78,31 @@ code {
 	background-color: #0c49c4;
 }
 
+.button-dark {
+	box-shadow:inset 0px 1px 0px 0px #cccccc;
+	background:linear-gradient(to bottom, #0f0c01 5%, #211500 100%);
+	background-color:#0f0c01;
+	border-radius:6px;
+	border:1px solid #8c8c8c;
+	display:block;
+	cursor:pointer;
+	color:#ffffff;
+	font-family:Arial;
+	font-size:15px;
+	font-weight:bold;
+	padding:6px 24px;
+	text-decoration:none;
+	text-shadow:0px 1px 0px #000000;
+}
+.button-dark:hover {
+	background:linear-gradient(to bottom, #211500 5%, #0f0c01 100%);
+	background-color:#211500;
+}
+.button-dark:active {
+	position: relative;
+	top     : 1px;
+}
+
 .tab {
 	box-shadow:inset 0px 1px 0px 0px #ffffff;
 	background:linear-gradient(to bottom, #ffffff 5%, #f6f6f6 100%);

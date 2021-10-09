@@ -5,7 +5,9 @@ type Props = {
   preset:
     | 'primary'
     | 'secondary'
-    | 'info',
+    | 'info'
+    | 'light'
+    | 'dark'
   active?: boolean,
   onClick?: React.MouseEventHandler<HTMLDivElement>,
   children: React.ReactNode,
