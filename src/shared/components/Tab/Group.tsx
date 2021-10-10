@@ -1,7 +1,8 @@
 import React from 'react';
-import { Flex, Link, Center, Spacer, Box } from '@chakra-ui/react'
+import { Flex, Link, Center, Spacer, Box, Text } from '@chakra-ui/react'
 import { Button } from './Button';
 import { Item } from './Item';
+import { GapHorizontal } from '../GapHorizontal';
 
 type Props = {
   initialTab: string,
@@ -17,12 +18,15 @@ export function Group(props: Props) {
         direction="row"
       >
         {props.tabs.map(([id, name]) =>
-        <Button
-          onClick={() => setCurrentTab(id)}
-          active={id === currentTab}
-        >
-          {name}
-        </Button>
+        <>
+          <Button
+            onClick={() => setCurrentTab(id)}
+            active={id === currentTab}
+          >
+            <Text fontSize="xs">{name}</Text>
+          </Button>
+          <GapHorizontal preset="xs" />
+        </>
         )}
       </Flex>
       <div>

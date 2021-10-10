@@ -1,7 +1,8 @@
 import React from 'react';
-import { Container, Navbar, Logo, Button } from '../../shared/components';
-import { Flex, Link, Center, Spacer, Box } from '@chakra-ui/react'
-import { Link as RouterLink } from "react-router-dom"
+import { Container, Navbar, Logo } from '../../shared/components';
+import { Flex } from '@chakra-ui/react'
+import { Footer } from '../components/Footer';
+import { WelcomeMessage } from '../components/WelcomeMessage';
 
 export function Welcome() {
   return (
@@ -64,5 +65,6 @@ export function Welcome() {
         </Center>
       </Flex >
     </Container >
+
   );
 }

@@ -1,16 +1,20 @@
 import React from 'react';
 import { Flex, Link, Center, Button, Spacer, Box } from '@chakra-ui/react'
 import { Container, Sidebar, Navbar } from '../../shared/components';
+import { Footer } from './Footer';
 
 type Props = {
   id:
-  | 'dashboard'
-  | 'resources'
-  | 'marketplace'
-  | 'hangar'
-  | 'galaxy'
-  | 'planet'
-  | 'alliances',
+    | 'home'
+    | 'marketplace'
+    | 'galaxy'
+    | 'investigation'
+    | 'alliances'
+    | 'planet'
+    | 'resources'
+    | 'hangar'
+    | 'production'
+    | 'facilities'
   children: React.ReactNode,
 };
 
@@ -31,6 +35,7 @@ export function Page(props: Props) {
           {props.children}
         </Flex>
       </Flex>
+      {/*<Footer />*/}
     </Container >
   );
 }

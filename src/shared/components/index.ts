@@ -6,3 +6,5 @@ export { Button } from './Button';
 export { Page } from './Page';
 export { Tab } from './Tab';
 export { Table } from './Table';
+export { GapVertical } from './GapVertical';
+export { GapHorizontal } from './GapHorizontal';

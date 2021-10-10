@@ -1,5 +1,5 @@
 import { Table as _Table } from './Table';
-import { Thead } from './Thead';
+import { MyThead as Thead } from './Thead';
 import { Tbody } from './Tbody';
 import { Row } from './Row';
 

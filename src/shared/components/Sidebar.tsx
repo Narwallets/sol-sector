@@ -1,17 +1,21 @@
 import React from 'react';
-import { Flex, Link, Center, Spacer, Box } from '@chakra-ui/react'
+import { Flex, Link, Center, Spacer, Box, Text } from '@chakra-ui/react'
 import { Link as RouterLink } from "react-router-dom"
 import { Button } from './Button';
+import { GapVertical } from './GapVertical';
 
 type Props = {
   page:
-    | 'dashboard'
-    | 'resources'
+    | 'home'
     | 'marketplace'
-    | 'hangar'
     | 'galaxy'
+    | 'investigation'
+    | 'alliances'
     | 'planet'
-    | 'alliances',
+    | 'resources'
+    | 'hangar'
+    | 'production'
+    | 'facilities'
 };
 
 export function Sidebar(props: Props) {
@@ -24,28 +28,18 @@ export function Sidebar(props: Props) {
       paddingY={10}
     >
       <Link
-        to="/dashboard"
+        to="/home"
         as={RouterLink}
       >
         <Button
           preset="primary"
-          active={props.page === 'dashboard'}
+          active={props.page === 'home'}
         >
-          Dashboard
+          <Text fontSize="xs">Home</Text>
         </Button>
       </Link>
 
-      <Link
-        to="/resources"
-        as={RouterLink}
-      >
-        <Button
-          preset="primary"
-          active={props.page === 'resources'}
-        >
-          Resources
-        </Button>
-      </Link>
+      <GapVertical />
 
       <Link
         to="/marketplace"
@@ -55,21 +49,11 @@ export function Sidebar(props: Props) {
           preset="primary"
           active={props.page === 'marketplace'}
         >
-          Marketplace
+          <Text fontSize="xs">Marketplace</Text>
         </Button>
       </Link>
 
-      <Link
-        to="/hangar"
-        as={RouterLink}
-      >
-        <Button
-          preset="primary"
-          active={props.page === 'hangar'}
-        >
-          Hangar
-        </Button>
-      </Link>
+      <GapVertical />
 
       <Link
         to="/galaxy"
@@ -79,21 +63,25 @@ export function Sidebar(props: Props) {
           preset="primary"
           active={props.page === 'galaxy'}
         >
-          Galaxy
+          <Text fontSize="xs">Galaxy</Text>
         </Button>
       </Link>
 
+      <GapVertical />
+
       <Link
-        to="/planet"
+        to="/investigation"
         as={RouterLink}
       >
         <Button
           preset="primary"
-          active={props.page === 'planet'}
+          active={props.page === 'investigation'}
         >
-          Planet
+          <Text fontSize="xs">Investigation</Text>
         </Button>
       </Link>
+
+      <GapVertical />
 
       <Link
         to="/alliances"
@@ -103,7 +91,77 @@ export function Sidebar(props: Props) {
           preset="primary"
           active={props.page === 'alliances'}
         >
-          Alliances
+          <Text fontSize="xs">Alliances</Text>
+        </Button>
+      </Link>
+
+      <GapVertical />
+
+      <Link
+        to="/planet"
+        as={RouterLink}
+      >
+        <Button
+          preset="secondary"
+          active={props.page === 'planet'}
+        >
+          <Text fontSize="xs">Planet</Text>
+        </Button>
+      </Link>
+
+      <GapVertical />
+
+      <Link
+        to="/resources"
+        as={RouterLink}
+      >
+        <Button
+          preset="secondary"
+          active={props.page === 'resources'}
+        >
+          <Text fontSize="xs">Resources</Text>
+        </Button>
+      </Link>
+
+      <GapVertical />
+
+      <Link
+        to="/hangar"
+        as={RouterLink}
+      >
+        <Button
+          preset="secondary"
+          active={props.page === 'hangar'}
+        >
+          <Text fontSize="xs">Hangar</Text>
+        </Button>
+      </Link>
+
+      <GapVertical />
+
+      <Link
+        to="/production"
+        as={RouterLink}
+      >
+        <Button
+          preset="secondary"
+          active={props.page === 'production'}
+        >
+          <Text fontSize="xs">Production</Text>
+        </Button>
+      </Link>
+
+      <GapVertical />
+
+      <Link
+        to="/facilities"
+        as={RouterLink}
+      >
+        <Button
+          preset="secondary"
+          active={props.page === 'facilities'}
+        >
+          <Text fontSize="xs">Facilities</Text>
         </Button>
       </Link>
     </Flex>
