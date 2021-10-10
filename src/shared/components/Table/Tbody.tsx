@@ -9,8 +9,11 @@ type Props = {
 export function Tbody(props: Props) {
   return (
     <Chakra.Tbody backgroundColor="#ccc2a6">
-      {props.data.map((item) =>
-      <Row {...item} />
+      {props.data.map((item, i) =>
+      <Row
+        key={i}
+        {...item}
+      />
       )}
     </Chakra.Tbody>
   );

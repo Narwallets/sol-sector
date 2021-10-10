@@ -18,7 +18,7 @@ export function Group(props: Props) {
         direction="row"
       >
         {props.tabs.map(([id, name]) =>
-        <>
+        <React.Fragment key={id}>
           <Button
             onClick={() => setCurrentTab(id)}
             active={id === currentTab}
@@ -26,7 +26,7 @@ export function Group(props: Props) {
             <Text fontSize="xs">{name}</Text>
           </Button>
           <Gap.Horizontal preset="xs" />
-        </>
+        </React.Fragment>
         )}
       </Flex>
       <div>
