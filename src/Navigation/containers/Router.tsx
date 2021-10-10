@@ -14,6 +14,7 @@ import { Hangar } from '../../Hangar';
 import { Galaxy } from '../../Galaxy';
 import { Planet } from '../../Planet';
 import { Alliances } from '../../Alliances';
+import { WelcomeIncinerator } from '../../WelcomeIncinerator';
 
 export function Router() {
   return (
@@ -24,6 +25,13 @@ export function Router() {
           exact
         >
           <Welcome />
+        </Route>
+
+        <Route
+          path="/incinerator"
+          exact
+        >
+          <WelcomeIncinerator />
         </Route>
 
         <Route
