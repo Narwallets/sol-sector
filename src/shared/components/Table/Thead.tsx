@@ -6,28 +6,31 @@ export function MyThead() {
     <Thead>
       <Tr>
         <Th>
-          <Text fontSize="xs">Element</Text>
+          <Text fontSize="xx-small">Element</Text>
         </Th>
         <Th width="100%">
-          <Text fontSize="xs">Name</Text>
+          <Text fontSize="xx-small">Name</Text>
         </Th>
         <Th>
-          <Text fontSize="xs">Sample</Text>
+          <Text fontSize="xx-small">Sample</Text>
         </Th>
         <Th isNumeric>
-          <Text fontSize="xs">Rarity</Text>
+          <Text fontSize="xx-small">Rarity</Text>
         </Th>
         <Th isNumeric>
-          <Text fontSize="xs">Weight/MT</Text>
+          <Text fontSize="xx-small">Weight/MT</Text>
         </Th>
         <Th isNumeric>
-          <Text fontSize="xs">Volume/MT</Text>
+          <Text fontSize="xx-small">Volume/MT</Text>
         </Th>
         <Th isNumeric>
-          <Text fontSize="xs">MT Available</Text>
+          <Text fontSize="xx-small">MT Available</Text>
         </Th>
         <Th>
-          <Text fontSize="xs">Price/MT</Text>
+          <Text fontSize="xx-small">Price/MT</Text>
+        </Th>
+        <Th>
+          <Text fontSize="xx-small">Actions</Text>
         </Th>
       </Tr>
     </Thead>

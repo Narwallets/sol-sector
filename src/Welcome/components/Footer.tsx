@@ -12,7 +12,7 @@ export function Footer() {
       justifyContent="center"
     >
       <Link
-        to="/dashboard"
+        to="/home"
         as={RouterLink}
       >
         <Center>

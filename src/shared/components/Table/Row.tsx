@@ -11,16 +11,18 @@ type Props = {
   weightByMt: string,
   mtAvailable: string,
   priceByMt: string,
+  onTrade: (data: Props) => any,
 };
 
 export function Row(props: Props) {
+  const onModalVisibility = () => props.onTrade(props);
   return (
     <Tr>
-      <Td className="text-sm">
-      <Text fontSize="xs">{props.symbol}</Text>
+      <Td>
+        <Text fontSize="xs">{props.symbol}</Text>
       </Td>
-      <Td className="text-sm">
-      <Text fontSize="xs">{props.name}</Text>
+      <Td>
+        <Text fontSize="xs">{props.name}</Text>
       </Td>
       <Td>
         <Center>
@@ -45,6 +47,14 @@ export function Row(props: Props) {
       </Td>
       <Td isNumeric>
         <Text fontSize="xs">{props.priceByMt}</Text>
+      </Td>
+      <Td>
+        <Button
+          preset="primary"
+          onClick={onModalVisibility}
+        >
+          <Text fontSize="xs">Trade</Text>
+        </Button>
       </Td>
     </Tr>
   );
