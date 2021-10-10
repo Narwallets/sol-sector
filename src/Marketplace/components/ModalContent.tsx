@@ -8,17 +8,18 @@ type Props = {
 export function ModalContent(props: Props) {
   React.useEffect(() => {
     document.getElementById('modal-container')!.classList.add('revealing');
-    return () => { 
-    };
   }, []);
 
-  const onHide = () => {
-    document.getElementById('modal-container')!.classList.remove('revealing');
-    props.onHide();
+  const onHide = (e: React.MouseEvent<HTMLElement>) => {
+    if ((e.target as HTMLElement).id === 'modal-content-container') {
+      document.getElementById('modal-container')!.classList.remove('revealing');
+      props.onHide();
+    }
   };
 
   return (
     <Flex
+      id="modal-content-container"
       onClick={onHide}
       h="100vh"
       flex={1}
