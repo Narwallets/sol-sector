@@ -1,1 +1,1 @@
-export { Alliances } from './containers/Alliances'
+export { Alliances } from './containers/Alliances';

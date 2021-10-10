@@ -1,1 +1,1 @@
-export { Galaxy } from './containers/Galaxy'
+export { Galaxy } from './containers/Galaxy';

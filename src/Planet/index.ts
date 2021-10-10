@@ -1,1 +1,1 @@
-export { Planet } from './containers/Planet'
+export { Planet } from './containers/Planet';
