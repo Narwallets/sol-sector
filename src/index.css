@@ -5,15 +5,7 @@ body {
 		sans-serif;
 	-webkit-font-smoothing : antialiased;
 	-moz-osx-font-smoothing: grayscale;
-	color                  : whitesmoke !important;
-	font-size              : 16px;
 	font-feature-settings  : "smcp";
-	font-variant           : small-caps;
-}
-
-p {
-	text-align: justify;
-	padding   : 10px;
 }
 
 code {

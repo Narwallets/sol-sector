@@ -2,7 +2,7 @@ import React from 'react';
 import { Flex, Link, Center, Spacer, Box, Text } from '@chakra-ui/react'
 import { Button } from './Button';
 import { Item } from './Item';
-import { GapHorizontal } from '../GapHorizontal';
+import { Gap } from '../Gap';
 
 type Props = {
   initialTab: string,
@@ -25,7 +25,7 @@ export function Group(props: Props) {
           >
             <Text fontSize="xs">{name}</Text>
           </Button>
-          <GapHorizontal preset="xs" />
+          <Gap.Horizontal preset="xs" />
         </>
         )}
       </Flex>

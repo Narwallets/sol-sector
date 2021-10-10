@@ -1,38 +1,37 @@
 import React from 'react';
-import { Container, Navbar, Logo, Button } from '../../shared/components';
-import { Flex, Link, Center, Spacer, Box, Text, OrderedList, ListItem } from '@chakra-ui/react'
+import { Button } from '../../shared/components';
+import { Flex, Link, Center } from '@chakra-ui/react'
 import { Link as RouterLink } from "react-router-dom"
-import { GapHorizontal } from '../../shared/components'
+import { Gap } from '../../shared/components'
 
 export function Footer() {
   return (
     <Flex
-      direction="row"
-      alignItems="center"
       justifyContent="center"
+      alignItems="center"
     >
       <Link
         to="/home"
         as={RouterLink}
       >
-        <Center>
-          <Button preset="primary" >
-            Play
-          </Button>
-        </Center>
+        <Button preset="primary" >
+          <Center>
+            Free Ticket
+          </Center>
+        </Button>
       </Link>
 
-      <GapHorizontal preset="lg" />
+      <Gap.Horizontal preset="lg" />
 
       <Link
-        to="/#"
+        to="/incinerator"
         as={RouterLink}
       >
-        <Center>
-          <Button preset="dark" >
+        <Button preset="dark" >
+          <Center>
             Incineration
-          </Button>
-        </Center>
+          </Center>
+        </Button>
       </Link>
     </Flex>
   );

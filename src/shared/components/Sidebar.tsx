@@ -2,7 +2,7 @@ import React from 'react';
 import { Flex, Link, Center, Spacer, Box, Text } from '@chakra-ui/react'
 import { Link as RouterLink } from "react-router-dom"
 import { Button } from './Button';
-import { GapVertical } from './GapVertical';
+import { Gap } from './Gap';
 
 type Props = {
   page:
@@ -30,6 +30,7 @@ export function Sidebar(props: Props) {
       <Link
         to="/home"
         as={RouterLink}
+        my={1}
       >
         <Button
           preset="primary"
@@ -39,11 +40,10 @@ export function Sidebar(props: Props) {
         </Button>
       </Link>
 
-      <GapVertical />
-
       <Link
         to="/marketplace"
         as={RouterLink}
+        my={1}
       >
         <Button
           preset="primary"
@@ -53,11 +53,10 @@ export function Sidebar(props: Props) {
         </Button>
       </Link>
 
-      <GapVertical />
-
       <Link
         to="/galaxy"
         as={RouterLink}
+        my={1}
       >
         <Button
           preset="primary"
@@ -67,11 +66,10 @@ export function Sidebar(props: Props) {
         </Button>
       </Link>
 
-      <GapVertical />
-
       <Link
         to="/investigation"
         as={RouterLink}
+        my={1}
       >
         <Button
           preset="primary"
@@ -81,11 +79,10 @@ export function Sidebar(props: Props) {
         </Button>
       </Link>
 
-      <GapVertical />
-
       <Link
         to="/alliances"
         as={RouterLink}
+        my={1}
       >
         <Button
           preset="primary"
@@ -95,11 +92,10 @@ export function Sidebar(props: Props) {
         </Button>
       </Link>
 
-      <GapVertical />
-
       <Link
         to="/planet"
         as={RouterLink}
+        my={1}
       >
         <Button
           preset="secondary"
@@ -109,11 +105,10 @@ export function Sidebar(props: Props) {
         </Button>
       </Link>
 
-      <GapVertical />
-
       <Link
         to="/resources"
         as={RouterLink}
+        my={1}
       >
         <Button
           preset="secondary"
@@ -123,11 +118,10 @@ export function Sidebar(props: Props) {
         </Button>
       </Link>
 
-      <GapVertical />
-
       <Link
         to="/hangar"
         as={RouterLink}
+        my={1}
       >
         <Button
           preset="secondary"
@@ -137,11 +131,10 @@ export function Sidebar(props: Props) {
         </Button>
       </Link>
 
-      <GapVertical />
-
       <Link
         to="/production"
         as={RouterLink}
+        my={1}
       >
         <Button
           preset="secondary"
@@ -151,11 +144,10 @@ export function Sidebar(props: Props) {
         </Button>
       </Link>
 
-      <GapVertical />
-
       <Link
         to="/facilities"
         as={RouterLink}
+        my={1}
       >
         <Button
           preset="secondary"

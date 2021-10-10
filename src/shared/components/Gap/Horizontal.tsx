@@ -5,7 +5,7 @@ type Props = {
   preset: 'lg' | 'md' | 'sm' | 'xs'
 };
 
-export function GapHorizontal(props: Props) {
+export function Horizontal(props: Props) {
   const size: Record<Props['preset'], number> = {
     lg: 10,
     md: 5,
