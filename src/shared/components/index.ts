@@ -7,3 +7,4 @@ export { Page } from './Page';
 export { Tab } from './Tab';
 export { Table } from './Table';
 export { Gap } from './Gap';
+export { Popover } from './Popover';

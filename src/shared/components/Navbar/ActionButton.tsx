@@ -13,7 +13,6 @@ export function ActionButton(props: Props) {
       x: rect.x,
       y: rect.y + rect.height,
     };
-    console.log('ACtionButton', coords);
     props.onClick(coords);
   };
   return (

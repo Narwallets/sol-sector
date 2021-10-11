@@ -16,7 +16,6 @@ export function Popover(props: Props) {
   );
 
   React.useEffect(() => {
-    console.log('Popover', props);
     wrapper.current.style.left = `${props.x.toFixed(2)}px`;
     wrapper.current.style.top = `${props.y.toFixed(2)}px`;
   }, [props.x, props.y]);

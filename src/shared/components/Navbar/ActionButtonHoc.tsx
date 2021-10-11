@@ -1,6 +1,6 @@
 import React from 'react';
 import { ActionButton } from './ActionButton';
-import { Popover } from './Popover';
+import { Popover } from '../Popover';
 
 type Props = {
   id: string,
