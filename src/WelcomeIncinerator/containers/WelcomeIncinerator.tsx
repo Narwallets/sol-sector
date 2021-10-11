@@ -17,18 +17,19 @@ export function WelcomeIncinerator() {
         <Heading
           size="sm"
           my={1}
+          color="whiteAlpha.900"
         >
           Thank you for your choice citizen!
         </Heading>
 
-        <Text my={1}>
+        <Text my={1} color="whiteAlpha.900">
           Dear Citizen 11243534A, This is Form A445-23565-Revision 135b. You need to fill this form by hand, two copies and deliver them
           personally to: Central Honorable Incinerator Commission, Central Road 1563, Floor 478, Office 2-B. After processing and if you
           are approved, you will be allowed to receive three copies of Form A445-23565-Revision 42g.
           Then you need to fill Form A445-23565-Revision 42g by hand, three copies and deliver them
           personally to: Central Honorable Incinerator Commission, Central Road 1563, Floor 478, Office 2-I.
         </Text>
-        <Text my={1}>
+        <Text my={1} color="whiteAlpha.900">
           By Central Directive C445-23565-2235 of the Beloved Community Government, any scratch or illegible information on Form A445-23565-Revision 42g
           will cause the prompt destruction of the Forms and you need to fill a new Form A445-23565-Revision 135b with additional Form A445-23565-Revision 135b-Annex
           indicating the reasons for the new presentation and a letter with sincere apologies according to model M-A451N0. You have up to 3 opportunities to present
@@ -36,7 +37,7 @@ export function WelcomeIncinerator() {
           Please be aware that if you are found guilty of obstructing bureaucracy you can be sentenced to jail time followed by ecoincineration.
         </Text>
 
-        <Text my={1}>
+        <Text my={1} color="whiteAlpha.900">
           <Center>
             <img
               src={require('../assets/govt-bureaucracies.jpg').default}
