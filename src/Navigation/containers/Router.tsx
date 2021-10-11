@@ -7,14 +7,17 @@ import {
 } from "react-router-dom";
 
 import { Welcome } from '../../Welcome';
+import { WelcomeIncinerator } from '../../WelcomeIncinerator';
 import { Home } from '../../Home';
 import { Marketplace } from '../../Marketplace';
 import { Resources } from '../../Resources';
 import { Hangar } from '../../Hangar';
+import { Production } from '../../Production';
+import { Facilities } from '../../Facilities';
 import { Galaxy } from '../../Galaxy';
 import { Planet } from '../../Planet';
+import { Investigation } from '../../Investigation';
 import { Alliances } from '../../Alliances';
-import { WelcomeIncinerator } from '../../WelcomeIncinerator';
 
 export function Router() {
   return (
@@ -55,7 +58,12 @@ export function Router() {
           <Galaxy />
         </Route>
 
-        {/* Investigation */}
+        <Route
+          path="/investigation"
+          exact
+        >
+          <Investigation />
+        </Route>
 
         <Route
           path="/alliances"
@@ -85,9 +93,19 @@ export function Router() {
           <Hangar />
         </Route>
 
-        {/* Production */}
+        <Route
+          path="/production"
+          exact
+        >
+          <Production />
+        </Route>
 
-        {/* Facilities */}
+        <Route
+          path="/facilities"
+          exact
+        >
+          <Facilities />
+        </Route>
       </Switch>
     </BrowserRouter>
   );
