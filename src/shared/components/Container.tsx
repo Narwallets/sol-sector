@@ -1,6 +1,5 @@
 import React from 'react';
 import * as Chakra from "@chakra-ui/react"
-import backgroundImage from '../assets/background_image.jpg';
 
 type Props = {
   children: React.ReactNode,
@@ -9,7 +8,7 @@ type Props = {
 export function Container(props: Props) {
   return (
     <Chakra.Flex
-      backgroundImage={backgroundImage}
+      backgroundImage={require('../assets/background_image.jpg').default}
       backgroundRepeat="no-repeat"
       backgroundPosition="bottom"
       backgroundSize="cover"

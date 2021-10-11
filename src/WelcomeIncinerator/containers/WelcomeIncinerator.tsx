@@ -3,8 +3,6 @@ import { Container, Navbar, Logo, Button, Gap } from '../../shared/components';
 import { Flex, Link, Center, Spacer, Box, Text, Heading } from '@chakra-ui/react'
 import { Link as RouterLink } from "react-router-dom"
 
-import bureaucracy_form from "../assets/govt-bureaucracies.jpg"
-
 export function WelcomeIncinerator() {
   return (
     <Container>
@@ -41,7 +39,7 @@ export function WelcomeIncinerator() {
         <Text my={1}>
           <Center>
             <img
-              src={bureaucracy_form}
+              src={require('../assets/govt-bureaucracies.jpg').default}
               style={{
                 width: "auto", height: "auto", objectFit: "cover"
               }}

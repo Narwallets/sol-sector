@@ -1,11 +1,9 @@
 import React from 'react';
 
-import logoBigImage from "../../assets/logo_big.jpg"
-
 export function Image() {
   return (
     <img
-      src={logoBigImage}
+      src={require('../../assets/logo_big.jpg').default}
       style={{
         width: "auto", height: "auto", objectFit: "cover"
       }}
