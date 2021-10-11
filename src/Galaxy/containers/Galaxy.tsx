@@ -7,7 +7,7 @@ import { Galaxy as IGalaxy, Coords } from '../interfaces';
 
 export function Galaxy() {
   const fontStyle = {
-    fontSize: 5,
+    fontSize: 8,
     fill: 'white'
   };
   const galaxyStyle = {

@@ -61,6 +61,67 @@ export const maffeiGroup: Galaxy[] = [
   },
 ];
 
+export const m81Group: Galaxy[] = [
+  {
+    x: 220 + 150,
+    y: 300,
+    text: 'N3738'
+  },
+  {
+    x: 240 + 150,
+    y: 320,
+    text: 'N4395'
+  },
+  {
+    x: 200 + 150,
+    y: 330,
+    text: 'N4214'
+  },
+  {
+    x: 245 + 150,
+    y: 280,
+    text: 'N5204'
+  },
+  {
+    x: 190 + 150,
+    y: 350,
+    text: 'M81'
+  },
+  {
+    x: 180 + 150,
+    y: 345,
+    text: 'M82'
+  },
+  {
+    x: 150 + 150,
+    y: 360,
+    text: 'N2366'
+  },
+  {
+    x: 145 + 150,
+    y: 370,
+    text: 'N1560'
+  },
+];
+
+const sparseGroup: Galaxy[] = [
+  {
+    x: 260,
+    y: 50,
+    text: 'E274-01'
+  },
+  {
+    x: 240,
+    y: 450,
+    text: 'Dwingeloo 1'
+  },
+  {
+    x: 10,
+    y: 260,
+    text: 'N45'
+  },
+];
+
 export const groups: Group[] = [
   {
     text: 'Local group',
@@ -74,4 +135,16 @@ export const groups: Group[] = [
     y: 160,
     galaxies: maffeiGroup,
   },
+  {
+    text: 'M81 Group',
+    x: 400,
+    y: 300,
+    galaxies: m81Group,
+  },
+  {
+    text: 'Sparse group',
+    x: 250,
+    y: 10,
+    galaxies: sparseGroup,
+  }
 ];
