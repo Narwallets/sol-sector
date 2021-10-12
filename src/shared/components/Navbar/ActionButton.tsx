@@ -25,10 +25,10 @@ export function ActionButton(props: Props) {
         justifyContent="center"
         alignItems="center"
       >
-        <Text fontSize="xs">
+        <Text fontSize="xs" color="white">
           {props.label}
         </Text>
-        <Text fontSize="lg">
+        <Text fontSize="lg" color="white">
           ⌄
         </Text>
       </Flex>
