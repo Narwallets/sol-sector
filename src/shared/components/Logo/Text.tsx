@@ -19,7 +19,7 @@ export function Text() {
         />
       </Link>
       <Box paddingLeft={2}>
-        <Heading size="xs">Sol Sector</Heading>
+        <Heading size="xs" color="white">Sol Sector</Heading>
       </Box>
     </Flex>
   );
