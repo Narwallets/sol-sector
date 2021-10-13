@@ -1,6 +1,6 @@
 import React from 'react';
-import { Flex, Link, Center, Spacer, Box } from '@chakra-ui/react'
-import { Button } from '../../shared/components';
+import { Flex, Text, Heading, Button, Box } from '@chakra-ui/react'
+import { Gap } from '../../shared/components';
 
 type Props = {
   name: string,
@@ -25,20 +25,24 @@ export function Card(props: Props) {
         <Flex
           direction="column"
         >
-          <span className="text-lg">{props.name}</span>
-          <span className="text-sm">Quantity: 1</span>
+          <Heading fontSize="xs">{props.name}</Heading>
+          <Text fontSize="xx-small">Quantity: 1</Text>
           <Flex
             direction="row"
             width={100}
           >
             <Button
-              preset="secondary"
+              size="xs"
+              colorScheme="gray"
             >
               Buy
             </Button>
-            <Spacer />
+
+            <Gap.Horizontal preset="xs" />
+
             <Button
-              preset="secondary"
+              size="xs"
+              colorScheme="gray"
             >
               Sell
             </Button>
