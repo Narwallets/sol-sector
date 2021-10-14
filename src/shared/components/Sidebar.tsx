@@ -19,6 +19,9 @@ type Props = {
 };
 
 export function Sidebar(props: Props) {
+  const onPreventDefault: React.MouseEventHandler<HTMLAnchorElement> =
+    (e) => e.preventDefault();
+
   return (
     <Flex
       direction="column"
@@ -31,10 +34,12 @@ export function Sidebar(props: Props) {
         to="/home"
         as={RouterLink}
         my={1}
+        onClick={onPreventDefault}
       >
         <Button
           preset="primary"
           active={props.page === 'home'}
+          disable
         >
           <Text fontSize="xs">Home</Text>
         </Button>
@@ -70,10 +75,12 @@ export function Sidebar(props: Props) {
         to="/investigation"
         as={RouterLink}
         my={1}
+        onClick={onPreventDefault}
       >
         <Button
           preset="primary"
           active={props.page === 'investigation'}
+          disable
         >
           <Text fontSize="xs">Investigation</Text>
         </Button>
@@ -83,10 +90,12 @@ export function Sidebar(props: Props) {
         to="/alliances"
         as={RouterLink}
         my={1}
+        onClick={onPreventDefault}
       >
         <Button
           preset="primary"
           active={props.page === 'alliances'}
+          disable
         >
           <Text fontSize="xs">Alliances</Text>
         </Button>
@@ -96,10 +105,12 @@ export function Sidebar(props: Props) {
         to="/planet"
         as={RouterLink}
         my={1}
+        onClick={onPreventDefault}
       >
         <Button
           preset="secondary"
           active={props.page === 'planet'}
+          disable
         >
           <Text fontSize="xs">Planet</Text>
         </Button>
@@ -109,10 +120,12 @@ export function Sidebar(props: Props) {
         to="/resources"
         as={RouterLink}
         my={1}
+        onClick={onPreventDefault}
       >
         <Button
           preset="secondary"
           active={props.page === 'resources'}
+          disable
         >
           <Text fontSize="xs">Resources</Text>
         </Button>
@@ -135,10 +148,12 @@ export function Sidebar(props: Props) {
         to="/production"
         as={RouterLink}
         my={1}
+        onClick={onPreventDefault}
       >
         <Button
           preset="secondary"
           active={props.page === 'production'}
+          disable
         >
           <Text fontSize="xs">Production</Text>
         </Button>
@@ -148,10 +163,12 @@ export function Sidebar(props: Props) {
         to="/facilities"
         as={RouterLink}
         my={1}
+        onClick={onPreventDefault}
       >
         <Button
           preset="secondary"
           active={props.page === 'facilities'}
+          disable
         >
           <Text fontSize="xs">Facilities</Text>
         </Button>

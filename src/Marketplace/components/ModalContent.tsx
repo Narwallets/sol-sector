@@ -34,9 +34,6 @@ export function ModalContent(props: Props) {
         p={1}
         borderRadius={3}
       >
-        <Text color="black">
-          TODO: contenido
-        </Text>
       </Flex>
     </Flex>
   );

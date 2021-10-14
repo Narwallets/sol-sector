@@ -11,7 +11,7 @@ export function Footer() {
       alignItems="center"
     >
       <Link
-        to="/home"
+        to="/marketplace"
         as={RouterLink}
       >
         <Button preset="primary" >
