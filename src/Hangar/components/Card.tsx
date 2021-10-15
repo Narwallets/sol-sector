@@ -10,7 +10,7 @@ type Props = {
 export function Card(props: Props) {
   return (
     <Box
-      backgroundColor="#333"
+      backgroundColor="#101010aa"
       p={2}
       m={2}
       borderRadius={2}
@@ -25,8 +25,8 @@ export function Card(props: Props) {
         <Flex
           direction="column"
         >
-          <Heading fontSize="xs">{props.name}</Heading>
-          <Text fontSize="xx-small">Quantity: 1</Text>
+          <Heading fontSize="s">{props.name}</Heading>
+          <Text fontSize="xx-small">      </Text>
           <Flex
             direction="row"
             width={100}

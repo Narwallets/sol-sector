@@ -19,8 +19,8 @@ export function Container(props: Props) {
         borderRadius={1}
         maxWidth={960}
         height="max-content"
-        backgroundColor="#192a43"
-        backgroundImage="linear-gradient(0deg, rgba(0,0,0,1) 0%, rgba(33,33,33,1) 100%)"
+        backgroundColor="#18222bbb"
+        // backgroundImage="linear-gradient(0deg, rgba(0,0,0,1) 0%, rgba(33,33,33,1) 100%)"
         boxShadow="1px 1px 10px #000"
       >
         {props.children}
