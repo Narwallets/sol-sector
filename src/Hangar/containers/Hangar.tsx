@@ -13,22 +13,22 @@ export function Hangar() {
       >
         <Card
           asset={Assets.spacecraft1}
-          name="VX-110"
+          name="Skylab"
         />
-        <Spacer />
+ 
         <Card
-          asset={Assets.spacecraft1}
-          name="VX-110"
+          asset={Assets.spacecraft2}
+          name="Galileo"
         />
-        <Spacer />
+
         <Card
-          asset={Assets.spacecraft1}
-          name="VX-110"
+          asset={Assets.spacecraft3}
+          name="Proton V"
         />
-        <Spacer />
+
         <Card
-          asset={Assets.spacecraft1}
-          name="VX-110"
+          asset={Assets.spacecraft4}
+          name="Zenit"
         />
       </Flex>
     </Page>

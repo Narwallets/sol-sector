@@ -13,8 +13,9 @@ export function Marketplace() {
       <Heading
         size="lg"
         mb={5}
+        color="#cccccc"
       >
-        Planet Dark-Mercury
+        Planet Hurbol
       </Heading>
       <Tab.Group
         initialTab="elements"

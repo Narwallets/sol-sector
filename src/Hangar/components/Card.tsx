@@ -10,7 +10,7 @@ type Props = {
 export function Card(props: Props) {
   return (
     <Box
-      backgroundColor="#333"
+      backgroundColor="#101010aa"
       p={2}
       m={2}
       borderRadius={2}
@@ -20,22 +20,22 @@ export function Card(props: Props) {
         alignItems="center"
       >
         <Box p={2}>
-          <img src={props.asset} style={{width:60,height:60}}></img>
+          <img src={props.asset} style={{width:100,height:60}}></img>
         </Box>
         <Flex
           direction="column"
         >
-          <Heading fontSize="xs">{props.name}</Heading>
-          <Text fontSize="xx-small">Quantity: 1</Text>
+          <Heading fontSize="s" color="#bbbbbb" margin="2">{props.name}</Heading>
+
           <Flex
             direction="row"
-            width={100}
+            width={160}
           >
             <Button
               size="xs"
               colorScheme="gray"
             >
-              Buy
+              Load fuel
             </Button>
 
             <Gap.Horizontal preset="xs" />
@@ -44,7 +44,7 @@ export function Card(props: Props) {
               size="xs"
               colorScheme="gray"
             >
-              Sell
+              Repair/improve
             </Button>
           </Flex>
         </Flex>
