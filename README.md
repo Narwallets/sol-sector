@@ -1,46 +1,12 @@
-# Getting Started with Create React App
+## Sol Sector
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
-
-## Available Scripts
-
-In the project directory, you can run:
-
-### `npm start`
-
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
-
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
-
-### `npm test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
+We want to build a play-to-enjoy game on the Solana blockchain. We are inspired by attractive classic space trading games as Elite. We also want to keep the classic-game feeling, with simple graphics, isometric projections and internal mini-games.
+We intend to be an interesting, attractive adventure, trying to engage the user's imagination, and becoming an enjoyable game, but more in the sense of an enjoyable book keeping simple graphics and engaging the user's imagination, and not try to be a full visual 3d game, something we associate with “movies”. We intend to be a very interesting book adventure, not a movie.
+We focused on designing the story and a simple web-based user interface. We intend to use Solana programs to manage every planet’s market, the basic elements as SPL-tokens, use NFTs for renting equipment, facilities and spacecraft, and also sell/buy the same game elements as NFTs
+We are motivated to do a type of game that is “play to enjoy and earn”, not only play to ear, that ends up being boring, turning out into gaming bubbles in which people play the trending game until a more profitable one appears.
+If the game in which you invest so many hours a day has its own currency there's no reason why you wouldn't be able to take profit from it.
+After all, time is money.
+During the hackathon we were able to compose a multidisciplinary team that complemented each other perfectly to develop the project.
+We devise a game of strategy, commerce, adventure, that will catch you.
+Vote for us and let's develop this project together.
+Let 's play.
