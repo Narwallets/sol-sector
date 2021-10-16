@@ -25,7 +25,7 @@ export function PopoverWallet() {
             fontSize="xs"
             color="black"
           >
-            Metamask
+            Phantom
           </Text>
         </Flex>
       </Link>
